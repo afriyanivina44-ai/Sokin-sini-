@@ -6,18 +6,18 @@
   "os_style": "Native Windows",
   "hardware": {
     "cpu_threads": 4,
-    "ram_gb": 16.0,
-    "disk_free_gb": 31.2
+    "disk_free_gb": 31.2,
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "Ikyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-15T12:37:08Z",
-  "expires_at": "2026-10-15T18:32:08Z",
+  "started_at": "2026-10-15T12:51:29Z",
+  "expires_at": "2026-10-15T18:46:29Z",
   "duration_menit": 355,
   "run_id": "38735968952",
-  "run_attempt": "1",
+  "run_attempt": "2",
   "run_number": "1",
   "run_url": "https://github.com/afriyanivina44-ai/Sokin-sini-/actions/runs/38735968952",
   "mode": "bersih+win10",
@@ -41,70 +41,13 @@
   "akses": {
     "mode": "tailscale",
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok",
+      "note": "Tailscale menolak koneksi. Periksa masa berlaku auth key dan persetujuan perangkat di tailnet.",
+      "status": "failed",
       "ip": "",
       "magicdns": "",
       "hostname": "",
       "funnel_addr": ""
     }
   },
-  "media": {
-    "audio_output": "rdp_playback_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "microphone": "rdp_capture_enabled"
-  },
-  "samp": {
-    "play_tested": false,
-    "samp_installed": false,
-    "status": "dependencies_ready",
-    "gta_installed": false,
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "netfx3": "Enabled",
-    "directx": "verified_x86_x64",
-    "directplay": "Enabled"
-  },
-  "game_environment": {
-    "play_tested": false,
-    "runner": "windows-latest",
-    "windows_server": true,
-    "hypervisor_present": true,
-    "os": "Microsoft Windows Server 2025 Datacenter"
-  },
-  "games": {
-    "minecraft_bedrock": {
-      "status": "disabled",
-      "note": "Tidak dipilih"
-    },
-    "roblox": {
-      "status": "unsupported_environment",
-      "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini."
-    },
-    "samp": {
-      "game_dir": null,
-      "samp_installed": false,
-      "gta_installed": false,
-      "status": "dependencies_ready",
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji."
-    },
-    "minecraft_java": {
-      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan.",
-      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
-      "status": "installer_ready",
-      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi"
-    }
-  },
-  "host_tools": {
-    "winrar": "verified 7.23.0 (vendor trial; license not included)",
-    "vcredist": "verified_current_v14_x86_x64",
-    "xampp": "failed",
-    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
-    "errors": [
-      "XAMPP: Installer SHA256 mismatch; execution refused"
-    ],
-    "public_port": false
-  },
-  "stopped_at": "2026-10-15T12:44:24Z"
+  "stopped_at": "2026-10-15T12:51:42Z"
 }
